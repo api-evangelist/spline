@@ -3,7 +3,10 @@ url: https://raw.githubusercontent.com/api-evangelist/spline/refs/heads/main/api
 name: Spline
 x-type: company
 description: >-
-  Spline is a real-time collaborative 3D design tool with AI-driven 3D object generation, web embedding, and animation.
+  Spline is a real-time collaborative 3D design tool with AI-driven object generation, web
+  embedding, and animation. Spline does NOT publish a REST API for 3D scene generation as of
+  May 2026; instead it exposes Code APIs (Web, SwiftUI, Kotlin) for embedding scenes, plus a
+  real-time API for variables/data and webhooks for event-driven integrations.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - 3D
@@ -11,13 +14,85 @@ tags:
   - AI
   - Collaboration
   - Web
+  - SDK
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: spline:code-api-web
+    name: Spline Code API for Web
+    description: >-
+      Client SDK for embedding and interacting with Spline scenes from JavaScript.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.spline.design/code-api-for-web
+    baseURL: https://docs.spline.design/code-api-for-web
+    tags:
+      - SDK
+      - JavaScript
+      - 3D Embed
+    properties:
+      - type: Documentation
+        url: https://docs.spline.design/code-api-for-web
+  - aid: spline:code-api-swiftui
+    name: Spline Code API for SwiftUI
+    description: >-
+      iOS client SDK for embedding Spline scenes in SwiftUI apps.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.spline.design/code-api-for-swiftui
+    baseURL: https://docs.spline.design/code-api-for-swiftui
+    tags:
+      - SDK
+      - SwiftUI
+      - iOS
+    properties:
+      - type: Documentation
+        url: https://docs.spline.design/code-api-for-swiftui
+  - aid: spline:code-api-kotlin
+    name: Spline Code API for Kotlin
+    description: >-
+      Android client SDK for embedding Spline scenes in Kotlin apps.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.spline.design/code-api-for-kotlin
+    baseURL: https://docs.spline.design/code-api-for-kotlin
+    tags:
+      - SDK
+      - Kotlin
+      - Android
+    properties:
+      - type: Documentation
+        url: https://docs.spline.design/code-api-for-kotlin
+  - aid: spline:realtime-variables
+    name: Spline Real-time Variables and Data API
+    description: >-
+      Real-time API for binding variables and data into live Spline scenes.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.spline.design/variables-and-data
+    baseURL: https://docs.spline.design/variables-and-data
+    tags:
+      - Realtime
+      - Variables
+      - Data Binding
+    properties:
+      - type: Documentation
+        url: https://docs.spline.design/variables-and-data
+  - aid: spline:webhooks
+    name: Spline Webhooks
+    description: >-
+      Webhook events for Spline integrations.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.spline.design/webhooks
+    baseURL: https://docs.spline.design/webhooks
+    tags:
+      - Webhooks
+      - Events
+    properties:
+      - type: Documentation
+        url: https://docs.spline.design/webhooks
 common:
   - type: Website
     url: https://spline.design/
+  - type: Documentation
+    url: https://docs.spline.design/
   - type: Plans
     url: plans/spline-plans-pricing.yml
   - type: RateLimits

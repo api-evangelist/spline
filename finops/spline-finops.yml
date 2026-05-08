@@ -5,7 +5,7 @@ provider: Spline
 providerId: spline
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: partial
 tags:
 - 3D
 - Design
@@ -15,10 +15,14 @@ tags:
 - FinOps
 - Cost Management
 - FOCUS
-description: FOCUS-aligned FinOps placeholder for Spline. Pipeline will replace with real billing details.
-notes: Initial scaffold — billing model has not yet been reconciled.
+description: >-
+  FOCUS-aligned FinOps view of Spline. Spline bills as seat-based design subscriptions with
+  bundled SDK access. There is no per-API-call line item; FinOps centers on right-sizing
+  designer seats and tracking AI credit consumption per plan.
+notes: Designer seat sizing is the primary cost lever; SDK embedding does not generate per-call charges directly.
 sources:
-- https://spline.design/
+- https://spline.design/pricing
+- https://docs.spline.design/
 - https://focus.finops.org/focus-specification/v1-3/
 alignedWith:
   framework: FinOps Foundation Framework
@@ -29,38 +33,44 @@ alignedWith:
 publisherName: Spline
 serviceCategory: 3D
 billingModel:
-  pricingCategory: To Be Reconciled
+  pricingCategory: Subscription (Seat-Based)
   billingFrequency: Monthly
   billingCurrency: USD
   chargeCategories:
-  - Usage
   - Purchase
   - Adjustment
 focusColumns:
-  ServiceName: Spline
+  ServiceName: Spline 3D Design Platform
   ServiceCategory: 3D
   ProviderName: Spline
   PublisherName: Spline
   InvoiceIssuerName: Spline
   BillingCurrency: USD
-  ChargeCategory: Usage
+  ChargeCategory: Purchase
 meters:
-- name: api_usage
-  description: Catch-all meter pending reconciliation.
-  unit: varies
+- name: designer_seats
+  description: Spline subscription seats (Super/Super Team/Enterprise).
+  unit: seat
+  aggregation: max
+  dimensions:
+  - account
+  - plan
+- name: ai_credits
+  description: AI generation credits consumed per plan tier.
+  unit: credit
   aggregation: sum
   dimensions:
   - account
-  - resource
+  - feature
 principles:
 - name: Visibility
-  description: Pull provider invoices or usage exports until a self-serve usage feed is documented.
+  description: Track designer seats and AI credit burn in Spline workspace billing.
 - name: Allocation
-  description: Tag invoice line items to consuming business units in your FinOps store.
+  description: Allocate seats to design teams; tag scenes to consuming product surfaces.
 - name: Optimization
-  description: Levers depend on the provider's billing model; review at renewal once reconciled.
+  description: Right-size seat count; downgrade idle designers.
 - name: Accountability
-  description: Assign a contract owner to review billing against negotiated terms.
+  description: Assign workspace admin to manage seat sprawl.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

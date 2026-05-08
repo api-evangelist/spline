@@ -15,21 +15,30 @@ tags:
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for Spline. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: >-
+  Spline does not publish a public REST API for 3D generation, so per-RPS rate limits do not
+  apply. SDK code APIs and webhooks are governed by the user's plan-based AI credit
+  allowances and project export limits.
+notes: Re-research Spline once a public REST generation API ships.
 sources:
-- https://spline.design/
+- https://docs.spline.design/
 responseCodes:
   throttled: 429
 limits:
-- name: Default
+- name: AI Credits (Plan-Based)
   scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  metric: ai_credits
+  limit: see plan tier
+  notes: AI generation features are gated by per-plan credit allowances.
+- name: SDK Embed Usage
+  scope: account
+  metric: scenes
+  limit: see plan tier
 policies:
 - name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+  description: Clients embedding Spline scenes via SDK should retry with exponential backoff on transient load.
+- name: Plan Choice
+  description: Choose Super / Team / Enterprise based on AI credit and seat needs.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
