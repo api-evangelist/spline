@@ -1,7 +1,7 @@
 aid: spline
 url: https://raw.githubusercontent.com/api-evangelist/spline/refs/heads/main/apis.yml
 name: Spline
-x-type: company
+kind: company
 description: >-
   Spline is a real-time collaborative 3D design tool with AI-driven object generation, web
   embedding, and animation. Spline does NOT publish a REST API for 3D scene generation as of
