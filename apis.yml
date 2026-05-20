@@ -89,6 +89,10 @@ apis:
       - type: Documentation
         url: https://docs.spline.design/webhooks
 common:
+  - type: GitHubOrganization
+    url: https://github.com/splinetool
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/splinetool
   - type: Website
     url: https://spline.design/
   - type: Documentation
