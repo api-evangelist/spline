@@ -103,6 +103,8 @@ common:
     url: rate-limits/spline-rate-limits.yml
   - type: FinOps
     url: finops/spline-finops.yml
+  - type: LLMsTxt
+    url: https://docs.spline.design/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
