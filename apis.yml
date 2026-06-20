@@ -7,7 +7,7 @@ description: >-
   embedding, and animation. Spline does NOT publish a REST API for 3D scene generation as of
   May 2026; instead it exposes Code APIs (Web, SwiftUI, Kotlin) for embedding scenes, plus a
   real-time API for variables/data and webhooks for event-driven integrations.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - 3D
   - Design
@@ -23,7 +23,7 @@ apis:
     name: Spline Code API for Web
     description: >-
       Client SDK for embedding and interacting with Spline scenes from JavaScript.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.spline.design/code-api-for-web
     baseURL: https://docs.spline.design/code-api-for-web
     tags:
@@ -37,7 +37,7 @@ apis:
     name: Spline Code API for SwiftUI
     description: >-
       iOS client SDK for embedding Spline scenes in SwiftUI apps.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.spline.design/code-api-for-swiftui
     baseURL: https://docs.spline.design/code-api-for-swiftui
     tags:
@@ -51,7 +51,7 @@ apis:
     name: Spline Code API for Kotlin
     description: >-
       Android client SDK for embedding Spline scenes in Kotlin apps.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.spline.design/code-api-for-kotlin
     baseURL: https://docs.spline.design/code-api-for-kotlin
     tags:
@@ -65,7 +65,7 @@ apis:
     name: Spline Real-time Variables and Data API
     description: >-
       Real-time API for binding variables and data into live Spline scenes.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.spline.design/variables-and-data
     baseURL: https://docs.spline.design/variables-and-data
     tags:
@@ -79,7 +79,7 @@ apis:
     name: Spline Webhooks
     description: >-
       Webhook events for Spline integrations.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.spline.design/webhooks
     baseURL: https://docs.spline.design/webhooks
     tags:
