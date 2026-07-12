@@ -89,6 +89,12 @@ apis:
       - type: Documentation
         url: https://docs.spline.design/webhooks
 common:
+  - type: TrustCenter
+    url: security/spline-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/spline-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/spline-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/splinetool
   - type: LinkedIn
