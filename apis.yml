@@ -23,6 +23,13 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spline.png
 tags:
   - 3D
   - Design
+  - Artificial Intelligence
+  - Collaboration
+  - Web
+  - SDK
+tags_raw:
+  - 3D
+  - Design
   - AI
   - Collaboration
   - Web
@@ -81,6 +88,10 @@ apis:
     humanURL: https://docs.spline.design/variables-and-data
     baseURL: https://docs.spline.design/variables-and-data
     tags:
+      - Real-Time
+      - Variables
+      - Data Binding
+    tags_raw:
       - Realtime
       - Variables
       - Data Binding
@@ -95,6 +106,9 @@ apis:
     humanURL: https://docs.spline.design/webhooks
     baseURL: https://docs.spline.design/webhooks
     tags:
+      - Webhook
+      - Event
+    tags_raw:
       - Webhooks
       - Events
     properties:
