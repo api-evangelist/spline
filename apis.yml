@@ -7,6 +7,17 @@ description: >-
   embedding, and animation. Spline does NOT publish a REST API for 3D scene generation as of
   May 2026; instead it exposes Code APIs (Web, SwiftUI, Kotlin) for embedding scenes, plus a
   real-time API for variables/data and webhooks for event-driven integrations.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
