@@ -2,11 +2,10 @@ aid: spline
 url: https://raw.githubusercontent.com/api-evangelist/spline/refs/heads/main/apis.yml
 name: Spline
 kind: company
-description: >-
-  Spline is a real-time collaborative 3D design tool with AI-driven object generation, web
-  embedding, and animation. Spline does NOT publish a REST API for 3D scene generation as of
-  May 2026; instead it exposes Code APIs (Web, SwiftUI, Kotlin) for embedding scenes, plus a
-  real-time API for variables/data and webhooks for event-driven integrations.
+description: Spline is a real-time collaborative 3D design tool with AI-driven object generation, web embedding,
+  and animation. Spline does NOT publish a REST API for 3D scene generation as of May 2026; instead it exposes Code
+  APIs (Web, SwiftUI, Kotlin) for embedding scenes, plus a real-time API for variables/data and webhooks for event-driven
+  integrations.
 deliveryModel:
   model: saas
   open_source: false
@@ -32,122 +31,119 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spline.png
 tags:
-  - 3D
-  - Design
-  - Artificial Intelligence
-  - Collaboration
-  - Web
-  - SDK
+- 3D
+- Design
+- Artificial Intelligence
+- Collaboration
+- Web
+- SDK
 tags_raw:
-  - 3D
-  - Design
-  - AI
-  - Collaboration
-  - Web
-  - SDK
+- 3D
+- Design
+- AI
+- Collaboration
+- Web
+- SDK
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.23'
 apis:
-  - aid: spline:code-api-web
-    name: Spline Code API for Web
-    description: >-
-      Client SDK for embedding and interacting with Spline scenes from JavaScript.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.spline.design/code-api-for-web
-    baseURL: https://docs.spline.design/code-api-for-web
-    tags:
-      - SDK
-      - JavaScript
-      - 3D Embed
-    properties:
-      - type: Documentation
-        url: https://docs.spline.design/code-api-for-web
-  - aid: spline:code-api-swiftui
-    name: Spline Code API for SwiftUI
-    description: >-
-      iOS client SDK for embedding Spline scenes in SwiftUI apps.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.spline.design/code-api-for-swiftui
-    baseURL: https://docs.spline.design/code-api-for-swiftui
-    tags:
-      - SDK
-      - SwiftUI
-      - iOS
-    properties:
-      - type: Documentation
-        url: https://docs.spline.design/code-api-for-swiftui
-  - aid: spline:code-api-kotlin
-    name: Spline Code API for Kotlin
-    description: >-
-      Android client SDK for embedding Spline scenes in Kotlin apps.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.spline.design/code-api-for-kotlin
-    baseURL: https://docs.spline.design/code-api-for-kotlin
-    tags:
-      - SDK
-      - Kotlin
-      - Android
-    properties:
-      - type: Documentation
-        url: https://docs.spline.design/code-api-for-kotlin
-  - aid: spline:realtime-variables
-    name: Spline Real-time Variables and Data API
-    description: >-
-      Real-time API for binding variables and data into live Spline scenes.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.spline.design/variables-and-data
-    baseURL: https://docs.spline.design/variables-and-data
-    tags:
-      - Real-Time
-      - Variables
-      - Data Binding
-    tags_raw:
-      - Realtime
-      - Variables
-      - Data Binding
-    properties:
-      - type: Documentation
-        url: https://docs.spline.design/variables-and-data
-  - aid: spline:webhooks
-    name: Spline Webhooks
-    description: >-
-      Webhook events for Spline integrations.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.spline.design/webhooks
-    baseURL: https://docs.spline.design/webhooks
-    tags:
-      - Webhook
-      - Event
-    tags_raw:
-      - Webhooks
-      - Events
-    properties:
-      - type: Documentation
-        url: https://docs.spline.design/webhooks
-common:
-  - type: TrustCenter
-    url: security/spline-trust-center.yml
-  - type: VulnerabilityDisclosure
-    url: security/spline-vulnerability-disclosure.yml
-  - type: DomainSecurity
-    url: security/spline-domain-security.yml
-  - type: GitHubOrganization
-    url: https://github.com/splinetool
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/splinetool
-  - type: Website
-    url: https://spline.design/
+- aid: spline:code-api-web
+  name: Spline Code API for Web
+  description: Client SDK for embedding and interacting with Spline scenes from JavaScript.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.spline.design/code-api-for-web
+  baseURL: https://docs.spline.design/code-api-for-web
+  tags:
+  - SDK
+  - JavaScript
+  - 3D Embed
+  properties:
   - type: Documentation
-    url: https://docs.spline.design/
-  - type: Plans
-    url: plans/spline-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/spline-rate-limits.yml
-  - type: FinOps
-    url: finops/spline-finops.yml
-  - type: LlmsText
-    url: https://docs.spline.design/llms.txt
+    url: https://docs.spline.design/code-api-for-web
+- aid: spline:code-api-swiftui
+  name: Spline Code API for SwiftUI
+  description: iOS client SDK for embedding Spline scenes in SwiftUI apps.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.spline.design/code-api-for-swiftui
+  baseURL: https://docs.spline.design/code-api-for-swiftui
+  tags:
+  - SDK
+  - SwiftUI
+  - iOS
+  properties:
+  - type: Documentation
+    url: https://docs.spline.design/code-api-for-swiftui
+- aid: spline:code-api-kotlin
+  name: Spline Code API for Kotlin
+  description: Android client SDK for embedding Spline scenes in Kotlin apps.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.spline.design/code-api-for-kotlin
+  baseURL: https://docs.spline.design/code-api-for-kotlin
+  tags:
+  - SDK
+  - Kotlin
+  - Android
+  properties:
+  - type: Documentation
+    url: https://docs.spline.design/code-api-for-kotlin
+- aid: spline:realtime-variables
+  name: Spline Real-time Variables and Data API
+  description: Real-time API for binding variables and data into live Spline scenes.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.spline.design/variables-and-data
+  baseURL: https://docs.spline.design/variables-and-data
+  tags:
+  - Real-Time
+  - Variables
+  - Data Binding
+  tags_raw:
+  - Realtime
+  - Variables
+  - Data Binding
+  properties:
+  - type: Documentation
+    url: https://docs.spline.design/variables-and-data
+- aid: spline:webhooks
+  name: Spline Webhooks
+  description: Webhook events for Spline integrations.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.spline.design/webhooks
+  baseURL: https://docs.spline.design/webhooks
+  tags:
+  - Webhook
+  - Event
+  tags_raw:
+  - Webhooks
+  - Events
+  properties:
+  - type: Documentation
+    url: https://docs.spline.design/webhooks
+common:
+- type: TrustCenter
+  url: security/spline-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/spline-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/spline-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/splinetool
+- type: LinkedIn
+  url: https://www.linkedin.com/company/splinetool
+- type: Website
+  url: https://spline.design/
+- type: Documentation
+  url: https://docs.spline.design/
+- type: Plans
+  url: plans/spline-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/spline-rate-limits.yml
+- type: FinOps
+  url: finops/spline-finops.yml
+- type: LlmsText
+  url: https://docs.spline.design/llms.txt
+- type: Blog
+  url: https://blog.spline.design
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
