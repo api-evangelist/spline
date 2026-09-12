@@ -1,0 +1,14 @@
+{
+  "repo": "spline",
+  "feeds": [
+    {
+      "source": "https://docs.spline.design/llms.txt",
+      "feed_url": "https://docs.spline.design/llms.txt",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-06T19:17:18Z"
+}
