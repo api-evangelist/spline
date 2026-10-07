@@ -120,6 +120,8 @@ apis:
   - type: Documentation
     url: https://docs.spline.design/webhooks
 common:
+- type: Pricing
+  url: https://spline.design/pricing
 - type: TrustCenter
   url: security/spline-trust-center.yml
 - type: VulnerabilityDisclosure
